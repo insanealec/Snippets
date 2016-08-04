@@ -2,7 +2,7 @@
 	<content><![CDATA[
 \$.ajax({
     url: '${1}',
-    type: '${2}',
+    type: '${2:POST}',
     error: (response) => {
         ${3};
     },
