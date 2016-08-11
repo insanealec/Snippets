@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+require_once \$_SERVER["DOCUMENT_ROOT"].'/common/autoload.php';
+require_once \$_SERVER["DOCUMENT_ROOT"].'/common/setDB_SQLSRV.php';
+\$conn = new SQLSRV(\$db);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sqlsrv</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
