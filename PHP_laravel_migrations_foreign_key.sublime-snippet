@@ -1,10 +1,11 @@
 <snippet>
 	<content><![CDATA[
-require_once \$_SERVER["DOCUMENT_ROOT"].'/common/autoload.php';
-\$conn = new SQLSRV();
+\$table->foreign('$1')
+	->references('$2')
+	->on('$3');
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>sqlsrv</tabTrigger>
+	<tabTrigger>foreign</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.php</scope>
 </snippet>
